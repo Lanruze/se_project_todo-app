@@ -76,4 +76,4 @@ CSS for layout, styling, and responsive design.
 
 This project is deployed on GitHub Pages:
 
-- [Link to App](https://github.com/Lanruze/se_project_todo-app)
+- [Link to App](https://lanruze.github.io/se_project_todo-app/) 
