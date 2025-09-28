@@ -9,7 +9,7 @@ class FormValidator {
     this._formEl = formEl;
   }
 
-  //implement all the other methods
+ 
 
   _showInputError = (inputElement, errorMessage) => {
     const errorElementId = `#${inputElement.id}-error`;
@@ -35,9 +35,7 @@ class FormValidator {
     }
   }
 
-  //ToDo- implement this method
-  //copy body of existing function
-  //work through errors in console as in enable validationConfig
+
 
   _hasInvalidInput = () => {
     return this._inputList.some((inputElement) => {
@@ -63,7 +61,7 @@ class FormValidator {
       this._submitButtonSelector
     );
 
-    this._toggleButtonState(); //calling function togglebuttonstate
+    this._toggleButtonState(); 
     this._inputList.forEach((inputElement) => {
       inputElement.addEventListener("input", () => {
         this._checkInputValidity(inputElement);
@@ -81,10 +79,9 @@ class FormValidator {
   }
 
   resetValidation() {
-    //reset the forms input
+   
     this._formEl.reset();
 
-    //Hide validation errors
     this._inputList.forEach((inputElement) => {
       this._hideInputError(inputElement);
     });
